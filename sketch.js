@@ -17,7 +17,7 @@ function preload(){
 
 
 function setup() {
-  createCanvas(700,500);
+  createCanvas(900,700);
   //append ( theTeam, img = loadImage("assets/pro1.jpg");
   
   //get image dimensions
