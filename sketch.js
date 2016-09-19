@@ -62,7 +62,7 @@ function draw() {
   
   if(randNum == 1){
     imageMode(CENTER);
-    image(notTheTeam[0], 0, 0);
+    image(notTheTeam[1], 0, 0);
     textSize(35);
     text("THAT'S NOT THE TEAM!!!!", 0, -190);
     
