@@ -15,9 +15,12 @@ function preload(){
     theTeam[i] = loadImage("assets/" + imageName);
     println(theTeam);
   }
+
+}
+function preload2(){
   for (var j = 0; j < notNumImages; j++) {
-  var imageName2 = "notpro" + (j) + ".jpg";
-  notTheTeam[j] = loadImage("notTheTeam/" + imageName2);
+    var imageName2 = "notpro" + (j) + ".jpg";
+    notTheTeam[j] = loadImage("notTheTeam/" + imageName2);
     
   }
 }
