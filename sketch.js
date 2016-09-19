@@ -82,6 +82,10 @@ function mousePressed() {
   if (isOverImage == true) {
     println("CLICK");
     currentImage = int(random(38));
+    
+    var randNum;
+    randNum = int(random(1,10));
+    text(randNum, 0, 0);
     //currentImage++;
     //img = theTeam[1];
   }
