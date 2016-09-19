@@ -5,6 +5,7 @@ var isOverImage;
 var theTeam = [];
 var numImages = 38;
 var currentImage = 0;
+var randNum = 0;
 
 function preload(){
   for (var i = 0; i < numImages; i++) {
@@ -46,6 +47,7 @@ function draw() {
   textSize(18);
   
   text("MEET THE TEAM!!!", 0, -200);
+  text(randNum, 0, 0);
   //image(img, 0, height/2, img.width/2, img.height/2);
   pop();
   println(mouseX);
@@ -83,9 +85,9 @@ function mousePressed() {
     println("CLICK");
     currentImage = int(random(38));
     
-    var randNum;
+    
     randNum = int(random(1,10));
-    text(randNum, 0, 0);
+    
     //currentImage++;
     //img = theTeam[1];
   }
