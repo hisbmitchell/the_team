@@ -31,20 +31,6 @@ function setup() {
   
 }
 
-function gotFile(file) {
-  createP(file.name + " " + file.size);
-  var img2 = createImg(file.data);
-  img2.size(100, 100);
-  
-}
-
-function highlight() {
-  dropzone.style('background-color','#ccc');
-}
-
-function unhighlight() {
-  dropzone.style('background-color','#fff');
-}
 
 function draw() {
   background(0);
@@ -70,6 +56,21 @@ function draw() {
   
   
   
+}
+
+function gotFile(file) {
+  createP(file.name + " " + file.size);
+  var img2 = createImg(file.data);
+  img2.size(100, 100);
+  
+}
+
+function highlight() {
+  dropzone.style('background-color','#ccc');
+}
+
+function unhighlight() {
+  dropzone.style('background-color','#fff');
 }
 
 function mousePressed() {
