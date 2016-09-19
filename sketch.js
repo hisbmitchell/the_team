@@ -49,7 +49,7 @@ function draw() {
   text("MEET THE TEAM!!!", 0, -200);
   
   
-  if(randNum = 1){
+  if(randNum == 1){
     
     text("RANDNUM!" + randNum, 0, -190);
     
