@@ -1,3 +1,4 @@
+var dropzone;
 var backgroundColor;
 var isOverImage;
 var theTeam = [];
@@ -15,12 +16,34 @@ function preload(){
 
 function setup() {
   createCanvas(900,700);
+  
+  
+  dropzone = select('#dropzone');
+  dropzone.dragOver(highlight);
+  dropzone.dragLeave(unhighlight);
+  dropzone.drop(gotFile, unhighlight);
+  
   //append ( theTeam, img = loadImage("assets/pro1.jpg");
   
   //get image dimensions
   
   img = theTeam[currentImage];
   
+}
+
+function gotFile(file) {
+  createP(file.name + " " + file.size);
+  var img = createImg(file.data);
+  img.size(100, 100);
+  
+}
+
+function highlight() {
+  dropzone.style('background-color','#ccc');
+}
+
+function unhighlight() {
+  dropzone.style('background-color','#fff');
 }
 
 function draw() {
