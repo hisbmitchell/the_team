@@ -51,7 +51,7 @@ function draw() {
   
   translate(width/2,height/2)
   imageMode(CENTER);
-  image(notTheTeam[0], 0, 0);
+  //image(notTheTeam[0], 0, 0);
   image(theTeam[currentImage], 0, 0);
   //image(notTheTeam[0], 0, 0);
   
