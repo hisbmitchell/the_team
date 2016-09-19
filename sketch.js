@@ -57,9 +57,9 @@ function draw() {
   
   
   if(randNum == 1){
-    textSize(35);
-    text("THAT'S NOT THE TEAM!!!!!" 0, -190);
-    text("GET BACK TO THE TEAM!!"0, -150)
+   // textSize(35);
+   // text("THAT'S NOT THE TEAM!!!!!" 0, -190);
+    //text("GET BACK TO THE TEAM!!"0, -150)
     imageMode(CENTER);
     image(notTheTeam[0], 0, 0);
     
