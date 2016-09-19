@@ -43,6 +43,7 @@ function draw() {
   
   textAlign(CENTER);
   textSize(18);
+  textColor(255);
   text("MEET THE TEAM!!!", 0, -200);
   //image(img, 0, height/2, img.width/2, img.height/2);
   pop();
