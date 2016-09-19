@@ -66,7 +66,7 @@ function draw() {
     
   }
   //image(img, 0, height/2, img.width/2, img.height/2);
-  pop();
+  
   println(mouseX);
   
   if (mouseX >= width/2 - img.width/2 && mouseX <= width/2 + img.width/2 && mouseY >= height/2 - img.height/2 && mouseY <= height/2 + img.height/2){
