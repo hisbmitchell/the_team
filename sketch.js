@@ -3,7 +3,9 @@ var dropzone;
 var backgroundColor;
 var isOverImage;
 var theTeam = [];
+var notTheTeam = [];
 var numImages = 38;
+var ntNumImages = 1;
 var currentImage = 0;
 var randNum = 0;
 
@@ -12,6 +14,11 @@ function preload(){
     var imageName = "pro" + (i) + ".jpg";
     theTeam[i] = loadImage("assets/" + imageName);
     println(theTeam);
+  }
+  for (var i = 0; i < ntNumImages; i++) {
+    var imageName = "notpro" + (i) + ".jpg";
+    notTheTeam[i] = loadImage("notTheTeam/" + imageName);
+    
   }
 }
 
@@ -50,11 +57,16 @@ function draw() {
   
   
   if(randNum == 1){
-    
-    text("RANDNUM!" + randNum, 0, -190);
+    textSize(35);
+    text("THAT'S NOT THE TEAM!!!!!" 0, -190);
+    text("GET BACK TO THE TEAM!!"0, -150)
+    imageMode(CENTER);
+    image(notTheTeam[0], 0, 0);
     
   } else {
+    
     text("" 0, -190);
+    image();
   }
   //image(img, 0, height/2, img.width/2, img.height/2);
   pop();
