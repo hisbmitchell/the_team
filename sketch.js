@@ -65,7 +65,7 @@ function draw() {
     text("THAT'S NOT THE TEAM!!!!", 0, -190);
     
   }else{
-    text("");
+    
   }
   //image(img, 0, height/2, img.width/2, img.height/2);
   
