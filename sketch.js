@@ -82,7 +82,7 @@ function mousePressed() {
     println("CLICK");
     currentImage = int(random(38));
     randNum = int(random(0,10));
-    if randNum == (1){
+    if (randNum = 1){
       text("NOT THE TEAM!!" 0, -300);
     }
     //currentImage++;
