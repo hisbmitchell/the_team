@@ -47,7 +47,7 @@ function draw() {
   textSize(18);
   
   text("MEET THE TEAM!!!", 0, -200);
-  text(randNum, 0, 0);
+  text("RANDNUM!" + randNum, 0, -190);
   //image(img, 0, height/2, img.width/2, img.height/2);
   pop();
   println(mouseX);
@@ -86,7 +86,7 @@ function mousePressed() {
     currentImage = int(random(38));
     
     
-    randNum = int(random(1,10));
+    randNum = int(random(10));
     
     //currentImage++;
     //img = theTeam[1];
