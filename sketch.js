@@ -1,6 +1,3 @@
-
-
-
 var backgroundColor;
 var isOverImage;
 var theTeam = [];
@@ -15,19 +12,12 @@ function preload(){
   }
 }
 
-var dropzone;
+
 function setup() {
   createCanvas(900,700);
   //append ( theTeam, img = loadImage("assets/pro1.jpg");
   
   //get image dimensions
-    
-  dropzone = select('#dropzone');
-  dropzone.dragOver(highlight);
-  dropzone.dragLeave(unhighlight);
-  dropzone.drop(gotFile, unhighlight);
-}
-
   
   img = theTeam[currentImage];
   
@@ -54,20 +44,7 @@ function draw() {
   } else {
     isOverImage = false;
   }
-  function gotFile(file) {
-  createP(file.name + " " + file.size);
-  var img = createImg(file.data);
-  img.size(100, 100);
   
-}
-
-function highlight() {
-  dropzone.style('background-color','#ccc');
-}
-
-function unhighlight() {
-  dropzone.style('background-color','#fff');
-}
   
   
 }
