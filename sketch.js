@@ -65,11 +65,11 @@ function gotFile(file) {
   var img2 = createImg(file.data);
   //img2.size(100, 100);
   
-  
+  function userImages(file){
   for (var i = 0; i < numUserImages; i++) {
     var imageName = "userImage" + (i) + ".jpg";
     append(UserImages[i],img2);
-    
+  }
   
   
 }
