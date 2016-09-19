@@ -86,7 +86,7 @@ function mousePressed() {
     //randNum = int(random(0,10));
     //if (randNum = 1){
     //  text("NOT THE TEAM!!" 0, -300);
-    }
+    //}
     //currentImage++;
     //img = theTeam[1];
   }
