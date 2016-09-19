@@ -33,8 +33,8 @@ function setup() {
 
 function gotFile(file) {
   createP(file.name + " " + file.size);
-  var img = createImg(file.data);
-  img.size(100, 100);
+  var img2 = createImg(file.data);
+  img2.size(100, 100);
   
 }
 
