@@ -4,7 +4,6 @@ var isOverImage;
 var theTeam = [];
 var numImages = 38;
 var currentImage = 0;
-var NumUserImages = 1;
 
 function preload(){
   for (var i = 0; i < numImages; i++) {
@@ -63,9 +62,7 @@ function draw() {
 function gotFile(file) {
   createP(file.name + " " + file.size);
   var img2 = createImg(file.data);
-  //img2.size(100, 100);
-  
-  
+  img2.size(100, 100);
   
 }
 
