@@ -5,7 +5,7 @@ var isOverImage;
 var theTeam = [];
 var notTheTeam = [];
 var numImages = 38;
-var ntNumImages = 1;
+var notNumImages = 1;
 var currentImage = 0;
 var randNum = 0;
 
@@ -15,9 +15,9 @@ function preload(){
     theTeam[i] = loadImage("assets/" + imageName);
     println(theTeam);
   }
-  for (var i = 0; i < ntNumImages; i++) {
-    var imageName = "notpro" + (i) + ".jpg";
-    notTheTeam[i] = loadImage("notTheTeam/" + imageName);
+  for (var j = 0; j < notNumImages; j++) {
+    var imageName = "notpro" + (j) + ".jpg";
+    notTheTeam[j] = loadImage("notTheTeam/" + imageName);
     
   }
 }
@@ -66,7 +66,7 @@ function draw() {
   } else {
     
     text("" 0, -190);
-    image();
+    //image();
   }
   //image(img, 0, height/2, img.width/2, img.height/2);
   pop();
