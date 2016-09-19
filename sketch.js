@@ -62,10 +62,10 @@ function draw() {
   
   if(randNum = 1){
     
-    text("RANDNUM!" + randNum, 0, -190);
+    text("THAT'S NOT THE TEAM!!!!", 0, -190);
     
   }else{
-    text("", 0 ,190);
+    text("", 0 ,-190);
   }
   //image(img, 0, height/2, img.width/2, img.height/2);
   
