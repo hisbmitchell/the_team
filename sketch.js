@@ -60,18 +60,18 @@ function draw() {
   text("MEET THE TEAM!!!", 0, -200);
   
   
-  if(randNum == 1){
-    textSize(35);
-    text("THAT'S NOT THE TEAM!!!!!" 0, -190);
-    text("GET BACK TO THE TEAM!!"0, -150)
-    imageMode(CENTER);
-    image(notTheTeam[0], 0, 0);
+  // if(randNum == 1){
+  //   textSize(35);
+  //   text("THAT'S NOT THE TEAM!!!!!" 0, -190);
+  //   text("GET BACK TO THE TEAM!!"0, -150)
+  //   imageMode(CENTER);
+  //   image(notTheTeam[0], 0, 0);
     
-  } else {
+  // } else {
     
-    text("" 0, -190);
-    //image();
-  }
+  //   text("" 0, -190);
+  //   //image();
+  // }
   //image(img, 0, height/2, img.width/2, img.height/2);
   pop();
   println(mouseX);
